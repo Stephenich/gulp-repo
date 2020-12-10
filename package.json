@@ -5,7 +5,11 @@
   "repository": "git@github.com:Stephenich/gulp-repo.git",
   "author": "Stephenich <sma.gurney@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "gulp": "gulp"
+  },
   "dependencies": {
+    "gulp": "^4.0.2",
     "gulp-cli": "^2.3.0"
   }
 }
