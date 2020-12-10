@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:Stephenich/gulp-repo.git",
   "author": "Stephenich <sma.gurney@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "gulp-cli": "^2.3.0"
+  }
 }
