@@ -1,0 +1,8 @@
+{
+  "name": "gulp-repo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Stephenich/gulp-repo.git",
+  "author": "Stephenich <sma.gurney@gmail.com>",
+  "license": "MIT"
+}
