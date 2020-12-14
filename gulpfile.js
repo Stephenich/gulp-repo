@@ -1,12 +1,16 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const { src, series, parallel, dest, watch } = require('gulp');
-const autoPrefixer = require('gulp-autoprefixer');
-const babel = require('gulp-babel');
+
 
 function copyHtml() {
     return src('src/*.html')
     .pipe(gulp.dest('docs'));
+
 }
 
 function jsTask() {
@@ -32,4 +36,7 @@ exports.copyHtml = copyHtml;
 exports.imgTask =imgTask;
 exports.cssTask = cssTask;
 exports.jsTask = jsTask;
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
