@@ -1,3 +1,4 @@
+
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const { src, series, parallel, dest, watch } = require('gulp');
@@ -9,12 +10,16 @@ function copyHtml() {
     .pipe(gulp.dest('docs'));
 }
 
+<<<<<<< HEAD
 function jsTask() {
     return src('src/js/*')
     .pipe(babel())
     .pipe(gulp.dest('docs/js'));
 }
 
+=======
+<<<<<<< HEAD
+>>>>>>> master
 function imgTask(){
     return src('src/images/*')
     .pipe(imagemin())
@@ -30,5 +35,12 @@ function cssTask(){
 exports.default= parallel(copyHtml, imgTask, cssTask, jsTask);
 exports.copyHtml = copyHtml;
 exports.imgTask =imgTask;
+<<<<<<< HEAD
 exports.cssTask = cssTask;
 exports.jsTask = jsTask;
+=======
+=======
+exports.default= copyHtml;
+
+>>>>>>> master
+>>>>>>> master
