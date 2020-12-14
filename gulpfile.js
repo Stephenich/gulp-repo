@@ -1,16 +1,9 @@
-const gulp = require ('gulp');
-var clean = require("gulp-clean")
-var copy = require('gulp-copy');
+const gulp = require('gulp');
+const { src, series, parallel, dest, watch } = require('gulp');
 
-function defaultTask(cb) {
-        return console.log("Gulping away!");
-    cb();
+function copyHtml() {
+    return src('src/*.html')
+    .pipe(gulp.dest('docs'));
 }
 
-function copyFunction() {
-    return gulp
-        .src([' ./src/.*'])
-        .pipe(copy('./docs', { prefix: 1 }))
-}
-
-gulp.task('defaultTask', defaultTask);
+exports.default= copyHtml;
