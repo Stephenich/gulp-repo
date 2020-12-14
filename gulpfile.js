@@ -1,3 +1,4 @@
+
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const { src, series, parallel, dest, watch } = require('gulp');
@@ -7,6 +8,7 @@ function copyHtml() {
     .pipe(gulp.dest('docs'));
 }
 
+<<<<<<< HEAD
 function imgTask(){
     return src('src/images/*')
     .pipe(imagemin())
@@ -16,3 +18,7 @@ function imgTask(){
 exports.default= copyHtml;
 exports.copyHtml = copyHtml;
 exports.imgTask =imgTask;
+=======
+exports.default= copyHtml;
+
+>>>>>>> master
