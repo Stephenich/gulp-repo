@@ -24,7 +24,9 @@ jobs:
         run: |
             yarn install --frozen-lockfile
 
-
+      - name: builds docs folder
+        run: |
+            gulp
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:

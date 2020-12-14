@@ -18,6 +18,9 @@
     "gulp-cli": "^2.3.0",
     "gulp-copy": "^4.0.1",
     "gulp-imagemin": "^7.1.0"
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
   }
 }

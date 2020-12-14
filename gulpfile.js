@@ -1,4 +1,7 @@
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const { src, series, parallel, dest, watch } = require('gulp');
@@ -33,3 +36,7 @@ exports.copyHtml = copyHtml;
 exports.imgTask =imgTask;
 exports.cssTask = cssTask;
 exports.jsTask = jsTask;
+<<<<<<< HEAD
+
+=======
+>>>>>>> master
