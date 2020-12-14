@@ -13,6 +13,6 @@ function imgTask(){
     .pipe(gulp.dest('docs/images'));
 }
 
-exports.default= copyHtml;
+exports.default= parallel(copyHtml, imgTask);
 exports.copyHtml = copyHtml;
 exports.imgTask =imgTask;
