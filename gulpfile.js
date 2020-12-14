@@ -5,9 +5,11 @@ const { src, series, parallel, dest, watch } = require('gulp');
 const autoPrefixer = require('gulp-autoprefixer');
 const babel = require('gulp-babel');
 
+
 function copyHtml() {
     return src('src/*.html')
     .pipe(gulp.dest('docs'));
+
 }
 
 function jsTask() {
