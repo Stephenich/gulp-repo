@@ -32,3 +32,4 @@ exports.copyHtml = copyHtml;
 exports.imgTask =imgTask;
 exports.cssTask = cssTask;
 exports.jsTask = jsTask;
+
