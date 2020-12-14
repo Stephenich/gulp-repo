@@ -13,4 +13,4 @@ function copyFunction() {
         .pipe(copy('./docs', { prefix: 1 }))
 }
 
-gulp.task('default', defaultTask);
+gulp.task('defaultTask', defaultTask);
