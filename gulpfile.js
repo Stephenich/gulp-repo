@@ -1,7 +1,8 @@
 const gulp = require('gulp');
 const imagemin = require('gulp-imagemin');
 const { src, series, parallel, dest, watch } = require('gulp');
-
+const autoPrefixer = require('gulp-autoprefixer');
+const babel = require('gulp-babel');
 
 function copyHtml() {
     return src('src/*.html')
@@ -16,7 +17,7 @@ function jsTask() {
 }
 
 function imgTask(){
-    return src('src/images/*')
+    return src('src/images/**/*')
     .pipe(imagemin())
     .pipe(gulp.dest('docs/images'));
 }
@@ -27,10 +28,11 @@ function cssTask(){
     .pipe(gulp.dest('docs/css'));
 }
 
+
 exports.default= parallel(copyHtml, imgTask, cssTask, jsTask);
 exports.copyHtml = copyHtml;
 exports.imgTask =imgTask;
 exports.cssTask = cssTask;
 exports.jsTask = jsTask;
-exports.jsTask = jsTask;
+
 
