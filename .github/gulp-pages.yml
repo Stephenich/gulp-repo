@@ -24,9 +24,8 @@ jobs:
         run: |
             yarn install --frozen-lockfile
 
-      - name: builds docs folder
-        run: |
-            gulp
+      - name: Compile with Gulp
+        uses: elstudio/actions-js-build/build@v2
 
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
